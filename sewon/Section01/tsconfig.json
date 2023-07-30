@@ -1,0 +1,18 @@
+{
+  // 컴파일 할 ts파일의 위치를  범위와 위치를 알려주는 옵션
+  "include": ["src"],
+  
+  "compilerOptions": {
+    "target": "ESNext",  // 컴파일 해서 만들어지는 자바스크립트 버젼을 설정해주는 옵션
+    "module": "ESNext",
+    "outDir": "dist", // 컴파일 결과로 생성되는 코드를 분리 할 수 있는션옵션
+    "strict": true, // 엄격한 타입결과 옵션
+    "moduleDetection": "force"  // 타입스크립트가 각각의 파일을  어떤 모듈로 감지 할건지 선택하는 옵션
+
+  },
+
+  "ts-node": {
+    "esm": true
+  }
+
+}
