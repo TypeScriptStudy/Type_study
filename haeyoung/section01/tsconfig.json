@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    //상세한 옵션 설정
+    "target": "ESNext",
+    //컴파일 자스 버전
+    "module": "ESNext",
+    //모듈 설정
+    "outDir": "dist",
+    //자스 파일 저장 경로
+    "strict": false,
+    //엄격한 타입 검사 모드
+    "moduleDetection": "force"
+    //각각의 파일을 어떤 모듈로 간주할것인지
+  },
+  "ts-node": {
+    "esm": true,
+    //ts-node es모듈시스템으로 동작
+  },
+  "include": ["src"]
+  //아 폴더 안에 있는 파일은 모두 컴파일
+}
