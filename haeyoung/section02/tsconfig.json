@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    //변환되는 자바 스크립트 버전
+    "module": "ESNext",
+    //변환되는 자바스크립트 모듈 시스템
+    "outDir": "dist",
+    //컴파일한 자바스크립트 위치
+    "strict": true,
+    //엄격한 타입 검사
+    "strictNullChecks": true,
+    //엄격한 null 검사
+    //strict가 상위 옵션
+    //strict true -> strictNullChecks true
+    //strict false -> strictNullChecks false
+    //각자 다르게 옵션 줄 수 있음
+    "moduleDetection": "force"
+    //각 파일은 개별 모듈로 취급해줌
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+  //컴파일 해줄 폴더
+}
