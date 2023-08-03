@@ -13,7 +13,7 @@
     //strict가 상위 옵션
     //strict true -> strictNullChecks true
     //strict false -> strictNullChecks false
-    //각자 다르게 옵션 줄 수 있음
+    //각자 다르게 옵션 줄 수는 있음
     "moduleDetection": "force"
     //각 파일은 개별 모듈로 취급해줌
   },
