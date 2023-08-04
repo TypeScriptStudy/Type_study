@@ -5,7 +5,7 @@ enum Role {
     // USER = 1,
     // GUEST = 2,
 
-    //자동 할당
+    //자동 증가 -> 0,1,2 할당됨 
     ADMIN,
     USER,
     GUEST,
@@ -37,6 +37,6 @@ console.log(user1, user2, user3)
 
 /** 컴파일된다면 enum은 사라지지 않음 */
 
-/**enum사용은 권장되지 않는다?
+/**enum사용은 권장되지 않는다? -> union타입 사용
  * Tree shaking 불가
  * 참고: https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking */

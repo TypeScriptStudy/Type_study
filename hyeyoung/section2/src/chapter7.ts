@@ -1,5 +1,5 @@
 //7. void, never 타입 
-//Void  : 공허 -> 아무것도 없음을 의미   
+//1. Void  : 공허 -> 아무것도 없음을 의미   
 
 function func1(): string { 
     return "hello";
@@ -18,7 +18,7 @@ a = {};
 */
 a = undefined;
 
-//never 
+//2. never 
 //never -> 존재하지 않는 
 //불가능한타입, 모순
 
@@ -29,8 +29,7 @@ function func3() : never{
 
 //실행시 프로그램 종료됨 
 function func4() {
-    throw new Error();
-    
+    throw new Error();    
 }
 
 //변수 type으로 never 지정
