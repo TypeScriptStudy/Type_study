@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target":"ESNext",
+        "module":"ESNext",
+        "outDir":"dist",
+        //상위옵션 strict가 꺼진다면 strictNullChecks도 꺼짐
+        "strict": true,
+        "strictNullChecks": true, //엄격한 null 검사
+        "moduleDetection": "force"
+    },
+    "ts-node":{
+        "esm":true
+    },
+    "include":["src"]
+}
