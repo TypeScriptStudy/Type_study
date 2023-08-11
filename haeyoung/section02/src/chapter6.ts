@@ -4,7 +4,8 @@ let anyVar: any = 10;
 anyVar = "hello";
 anyVar = true;
 anyVar = {};
-anyVar = () => {};
+anyVar = () => {
+};
 //함수에서 toUppercase 함수 사용해서 오류남
 
 anyVar.toUpperCase();
@@ -22,14 +23,15 @@ num = anyVar;
 let unknownVar: unknown;
 unknownVar = "";
 unknownVar = 1;
-unknownVar = () => {};
+unknownVar = () => {
+};
 
 // unknownVar.toUpperCase();
 // num = unknownVar;
 //모든 타입의 변수에 unknown 값을 넣을 수 없음
 //연산도 불가능
 
-if (typeof unknownVar === 'number'){
+if (typeof unknownVar === 'number') {
     //타입 정제
     //unkownVar가 number인걸 명시해주면 가능
     num = unknownVar;
