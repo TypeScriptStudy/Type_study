@@ -2,8 +2,6 @@
 // = 참 또는 거짓을 반환하는 함수를 이용해 우리 입맛대로 타입 가드를 만들 수 있도록 도와주는 타입스크립트의 문법
 
 
-//
-
 type Dog = {
     name: string;
     isBark: boolean;
@@ -29,6 +27,7 @@ type Dog = {
   
 //(...)
 
+   
 // Dog 타입인지 확인하는 타입 가드
 function isDog(animal: Animal): animal is Dog {
     return (animal as Dog).isBark !== undefined;
